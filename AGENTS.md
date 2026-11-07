@@ -29,5 +29,5 @@
 
 ## Git 提交
 
-- 默认使用简体中文提交信息。
-- 使用 Conventional Commits 时保留英文类型前缀，例如：`feat: 添加项目发布 Skill`。
+- 默认使用英语提交信息。
+- 使用 Conventional Commits 时保留英文类型前缀，例如：`feat: Release Skill`。
