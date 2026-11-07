@@ -1,0 +1,59 @@
+{
+  "name": "@carrot404/skills",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Carrot404 的 Agent Skills 聚合仓库",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Carrot404/skills.git"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint scripts tests site vitest.config.mjs",
+    "lint:fix": "oxlint --fix scripts tests site vitest.config.mjs",
+    "check": "pnpm run groups:check && pnpm run skills:list && pnpm test",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "skills:add": "skills add",
+    "skills:install": "skills add .",
+    "skills:list": "node scripts/list-skills.mjs",
+    "groups:generate": "node scripts/generate-skill-groups.mjs",
+    "groups:check": "node scripts/generate-skill-groups.mjs --check",
+    "sources:add": "git submodule add",
+    "sources:init": "git submodule update --init --recursive",
+    "update": "node scripts/update-skills.mjs",
+    "site:prepare": "node scripts/build-site-assets.mjs",
+    "site:dev": "pnpm run site:prepare && astro dev --root site --host",
+    "site:build": "pnpm run site:prepare && astro build --root site",
+    "site:check": "pnpm run check && pnpm run site:prepare && astro check --root site && astro build --root site && node scripts/check-site-links.mjs"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@fontsource/geist-mono": "5.3.0",
+    "@fontsource/geist-sans": "5.3.0",
+    "@phosphor-icons/web": "2.1.2",
+    "@types/archiver": "7.0.0",
+    "@types/sanitize-html": "2.16.0",
+    "@vitest/coverage-v8": "4.1.10",
+    "adm-zip": "0.5.16",
+    "archiver": "8.0.0",
+    "astro": "7.2.0",
+    "gray-matter": "4.0.3",
+    "marked": "18.0.9",
+    "oxlint": "1.78.0",
+    "sanitize-html": "2.17.6",
+    "shiki": "4.4.2",
+    "skills": "1.5.22",
+    "typescript": "6.0.3",
+    "vitest": "4.1.10"
+  },
+  "engines": {
+    "node": ">=22.20.0"
+  },
+  "packageManager": "pnpm@10.34.4",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

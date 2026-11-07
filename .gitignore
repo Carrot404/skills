@@ -1,0 +1,13 @@
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+node_modules/
+*.log
+temp/
+coverage/
+site/dist/
+site/.astro/
+site/public/downloads/
+site/public/search-index.json
+.turbo
