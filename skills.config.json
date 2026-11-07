@@ -2,7 +2,8 @@
   "caveman": {
     "submodule": "sources/caveman",
     "skillPath": "skills/caveman",
-    "category": "productivity"
+    "category": "productivity",
+    "skillDependencies": ["ultracave", "megacave"]
   },
   "caveman-commit": {
     "submodule": "sources/caveman",
@@ -13,5 +14,24 @@
     "submodule": "sources/caveman",
     "skillPath": "skills/caveman-review",
     "category": "development"
+  },
+  "ultracave": {
+    "submodule": "sources/caveman",
+    "skillPath": "skills/ultracave",
+    "category": "productivity"
+  },
+  "megacave": {
+    "submodule": "sources/caveman",
+    "skillPath": "skills/megacave",
+    "category": "productivity"
+  },
+  "siyuan-skill": {
+    "category": "productivity",
+    "requirements": [
+      {
+        "title": "SiYuan Note CLI",
+        "description": "需要在 PATH 中提供 siyuan 或 SiYuan-Kernel 命令；Skill 中的命令基于 CLI v3.8.9。"
+      }
+    ]
   }
 }

@@ -28,7 +28,20 @@
       "source": "./",
       "strict": false,
       "skills": [
-        "./skills/caveman"
+        "./skills/caveman",
+        "./skills/megacave",
+        "./skills/siyuan-skill",
+        "./skills/ultracave"
+      ]
+    },
+    {
+      "name": "other",
+      "description": "其他",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/agent-ssh-cli",
+        "./skills/surge"
       ]
     }
   ]
