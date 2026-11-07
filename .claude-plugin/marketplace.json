@@ -3,5 +3,33 @@
   "owner": {
     "name": "Carrot404"
   },
-  "plugins": []
+  "plugins": [
+    {
+      "name": "development",
+      "description": "开发工程",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/caveman-review"
+      ]
+    },
+    {
+      "name": "repository-workflow",
+      "description": "仓库工作流",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/caveman-commit"
+      ]
+    },
+    {
+      "name": "productivity",
+      "description": "效率与思考",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/caveman"
+      ]
+    }
+  ]
 }

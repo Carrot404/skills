@@ -1,1 +1,17 @@
-{}
+{
+  "caveman": {
+    "submodule": "sources/caveman",
+    "skillPath": "skills/caveman",
+    "category": "productivity"
+  },
+  "caveman-commit": {
+    "submodule": "sources/caveman",
+    "skillPath": "skills/caveman-commit",
+    "category": "repository-workflow"
+  },
+  "caveman-review": {
+    "submodule": "sources/caveman",
+    "skillPath": "skills/caveman-review",
+    "category": "development"
+  }
+}

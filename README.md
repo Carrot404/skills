@@ -5,9 +5,8 @@
 
 ## 可用 Skills
 
-当前仅迁移仓库框架，尚未添加个人 Skills 或外部子模块。
-完整清单、用途及特殊安装要求见 [`SKILLS.md`](SKILLS.md)。
-空仓库可正常通过本地校验和网站构建；添加 Skill 后才能使用安装命令。
+当前发布了来自 Caveman 的三个 Skill。完整清单、用途及特殊安装要求见
+[`SKILLS.md`](SKILLS.md)。
 
 ## 快速开始
 
