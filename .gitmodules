@@ -16,3 +16,21 @@
 [submodule "sources/patent-disclosure-skill"]
 	path = sources/patent-disclosure-skill
 	url = https://github.com/handsomestWei/patent-disclosure-skill
+[submodule "sources/anthropic-skills"]
+	path = sources/anthropic-skills
+	url = https://github.com/anthropics/skills
+[submodule "sources/claude-plugins-community"]
+	path = sources/claude-plugins-community
+	url = https://github.com/anthropics/claude-plugins-community
+[submodule "sources/vercel-skills"]
+	path = sources/vercel-skills
+	url = https://github.com/vercel-labs/skills
+[submodule "sources/mattpocock-skills"]
+	path = sources/mattpocock-skills
+	url = https://github.com/mattpocock/skills
+[submodule "sources/drawio-skill"]
+	path = sources/drawio-skill
+	url = https://github.com/Agents365-ai/drawio-skill
+[submodule "sources/academic-research-skills"]
+	path = sources/academic-research-skills
+	url = https://github.com/Imbad0202/academic-research-skills

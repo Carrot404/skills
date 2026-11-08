@@ -10,10 +10,15 @@
       "source": "./",
       "strict": false,
       "skills": [
+        "./skills/agent-ssh-cli",
         "./skills/caveman-review",
+        "./skills/domain-modeling",
+        "./skills/grill-with-docs",
+        "./skills/html-plan",
         "./skills/ponytail",
         "./skills/ponytail-audit",
-        "./skills/ponytail-review"
+        "./skills/ponytail-review",
+        "./skills/surge"
       ]
     },
     {
@@ -26,27 +31,32 @@
       ]
     },
     {
+      "name": "diagramming",
+      "description": "图表可视化",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/drawio-skill"
+      ]
+    },
+    {
       "name": "productivity",
       "description": "效率与思考",
       "source": "./",
       "strict": false,
       "skills": [
+        "./skills/academic-paper-reviewer",
+        "./skills/academic-slides",
         "./skills/caveman",
+        "./skills/find-skills",
+        "./skills/grill-me",
+        "./skills/grilling",
         "./skills/paper-reading-tutor",
         "./skills/paper-rebuttal",
         "./skills/patent-disclosure",
+        "./skills/pdf",
         "./skills/research-proposal",
         "./skills/siyuan-skill"
-      ]
-    },
-    {
-      "name": "other",
-      "description": "其他",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/agent-ssh-cli",
-        "./skills/surge"
       ]
     }
   ]

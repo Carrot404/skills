@@ -29,6 +29,59 @@
     "skillPath": "skills/ponytail-review",
     "category": "development"
   },
+  "drawio-skill": {
+    "submodule": "sources/drawio-skill",
+    "skillPath": "skills/drawio-skill",
+    "category": "diagramming",
+    "requirements": [
+      {
+        "title": "Python 3",
+        "description": "核心工作流需要 Python 3；原生导出需要 draw.io，自动布局可选用 Graphviz。"
+      }
+    ]
+  },
+  "find-skills": {
+    "submodule": "sources/vercel-skills",
+    "skillPath": "skills/find-skills",
+    "category": "productivity"
+  },
+  "grilling": {
+    "submodule": "sources/mattpocock-skills",
+    "skillPath": "skills/productivity/grilling",
+    "category": "productivity"
+  },
+  "domain-modeling": {
+    "submodule": "sources/mattpocock-skills",
+    "skillPath": "skills/engineering/domain-modeling",
+    "category": "development"
+  },
+  "grill-me": {
+    "submodule": "sources/mattpocock-skills",
+    "skillPath": "skills/productivity/grill-me",
+    "category": "productivity",
+    "skillDependencies": ["grilling"]
+  },
+  "grill-with-docs": {
+    "submodule": "sources/mattpocock-skills",
+    "skillPath": "skills/engineering/grill-with-docs",
+    "category": "development",
+    "skillDependencies": ["grilling", "domain-modeling"]
+  },
+  "html-plan": {
+    "submodule": "sources/claude-plugins-community",
+    "skillPath": "html-plan/skills/html-plan",
+    "category": "development"
+  },
+  "academic-slides": {
+    "submodule": "sources/evoskills",
+    "skillPath": "skills/academic-slides",
+    "category": "productivity"
+  },
+  "academic-paper-reviewer": {
+    "submodule": "sources/academic-research-skills",
+    "skillPath": "academic-paper-reviewer",
+    "category": "productivity"
+  },
   "paper-reading-tutor": {
     "submodule": "sources/paper-reading-tutor",
     "skillPath": ".",
@@ -44,10 +97,21 @@
     "skillPath": "skills/patent-disclosure",
     "category": "productivity"
   },
+  "pdf": {
+    "submodule": "sources/anthropic-skills",
+    "skillPath": "skills/pdf",
+    "category": "productivity"
+  },
   "research-proposal": {
     "submodule": "sources/research-skills",
     "skillPath": "research-proposal",
     "category": "productivity"
+  },
+  "agent-ssh-cli": {
+    "category": "development"
+  },
+  "surge": {
+    "category": "development"
   },
   "siyuan-skill": {
     "category": "productivity",
