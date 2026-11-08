@@ -5,13 +5,8 @@
 | `caveman` | 精简回答，同时保留技术信息 | [Caveman](https://github.com/JuliusBrussee/caveman) |
 | `caveman-commit` | 生成精简的 Conventional Commit 信息 | 同上 |
 | `caveman-review` | 生成精简的代码审查意见 | 同上 |
-| `ultracave` | 以极简片语压缩回答 | 同上 |
-| `megacave` | 以文言文精简回答 | 同上 |
 | `ponytail` | 通过复用现有实现和最小改动避免过度设计 | [Ponytail](https://github.com/DietrichGebert/ponytail) |
 | `ponytail-audit` | 审查整个仓库的质量、风险和可精简内容 | 同上 |
-| `ponytail-debt` | 汇总标记的代码捷径和技术债 | 同上 |
-| `ponytail-gain` | 展示 Ponytail 基准测试结果 | 同上 |
-| `ponytail-help` | 查看 Ponytail 模式和命令帮助 | 同上 |
 | `ponytail-review` | 审查代码改动的质量、风险和可精简内容 | 同上 |
 | `paper-reading-tutor` | 检索、翻译并深入研读学术论文 | [paper-reading-tutor](https://github.com/LunarXuan/paper-reading-tutor) |
 | `paper-rebuttal` | 分析审稿意见并撰写论文回应 | [EvoSkills](https://github.com/EvoScientist/EvoSkills/tree/main/skills/paper-rebuttal) |
@@ -21,12 +16,8 @@
 | `agent-ssh-cli` | 通过 SSH CLI 管理连接和操作远程服务器 | [agent-ssh-cli](https://github.com/sleepinginsummer/agent-ssh-cli)，本地维护副本 |
 | `siyuan-skill` | 通过 CLI 管理思源笔记 | [personal-skill/siyuan-skill](https://github.com/emptylight370/personal-skill/tree/main/siyuan-skill)，本地维护副本 |
 
-`caveman` 中的 `/caveman ultra` 和 `/caveman wenyan` 别名分别依赖
-`ultracave` 和 `megacave`。如需使用这两个别名，安装时请一并指定：
-
-```bash
-npx skills add Carrot404/skills --skill caveman ultracave megacave
-```
+`caveman` 中的 `/caveman ultra` 和 `/caveman wenyan` 别名分别依赖上游的
+`ultracave` 和 `megacave`，本仓库不再发布这两个 Skill。
 
 Ponytail 的 Skill 以原样同步；其帮助中提到的插件钩子、自动启用、Band 和插件更新功能需要上游插件，单独安装 Skill 不提供这些功能。
 

@@ -13,9 +13,6 @@
         "./skills/caveman-review",
         "./skills/ponytail",
         "./skills/ponytail-audit",
-        "./skills/ponytail-debt",
-        "./skills/ponytail-gain",
-        "./skills/ponytail-help",
         "./skills/ponytail-review"
       ]
     },
@@ -35,13 +32,11 @@
       "strict": false,
       "skills": [
         "./skills/caveman",
-        "./skills/megacave",
         "./skills/paper-reading-tutor",
         "./skills/paper-rebuttal",
         "./skills/patent-disclosure",
         "./skills/research-proposal",
-        "./skills/siyuan-skill",
-        "./skills/ultracave"
+        "./skills/siyuan-skill"
       ]
     },
     {

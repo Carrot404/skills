@@ -2,8 +2,7 @@
   "caveman": {
     "submodule": "sources/caveman",
     "skillPath": "skills/caveman",
-    "category": "productivity",
-    "skillDependencies": ["ultracave", "megacave"]
+    "category": "productivity"
   },
   "caveman-commit": {
     "submodule": "sources/caveman",
@@ -15,16 +14,6 @@
     "skillPath": "skills/caveman-review",
     "category": "development"
   },
-  "ultracave": {
-    "submodule": "sources/caveman",
-    "skillPath": "skills/ultracave",
-    "category": "productivity"
-  },
-  "megacave": {
-    "submodule": "sources/caveman",
-    "skillPath": "skills/megacave",
-    "category": "productivity"
-  },
   "ponytail": {
     "submodule": "sources/ponytail",
     "skillPath": "skills/ponytail",
@@ -33,21 +22,6 @@
   "ponytail-audit": {
     "submodule": "sources/ponytail",
     "skillPath": "skills/ponytail-audit",
-    "category": "development"
-  },
-  "ponytail-debt": {
-    "submodule": "sources/ponytail",
-    "skillPath": "skills/ponytail-debt",
-    "category": "development"
-  },
-  "ponytail-gain": {
-    "submodule": "sources/ponytail",
-    "skillPath": "skills/ponytail-gain",
-    "category": "development"
-  },
-  "ponytail-help": {
-    "submodule": "sources/ponytail",
-    "skillPath": "skills/ponytail-help",
     "category": "development"
   },
   "ponytail-review": {
