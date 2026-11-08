@@ -66,8 +66,8 @@ describe('check-site-links', () => {
     expect(await resolveBuiltTarget('/../../outside', { distRoot: root })).toBeNull();
   });
 
-  it('extracts quoted targets and skips fragments and every external scheme', () => {
-    expect(extractTargets('<a href="/a"><img src=\'/b.png\'><a href=/ignored>')).toEqual(['/a', '/b.png']);
+  it('extracts HTML attributes, not code or comments, and skips external targets', () => {
+    expect(extractTargets('<a href="/a"><img src=\'/b.png\'><a href=/unquoted><code>src="path"</code><!-- <a href="/comment"> -->')).toEqual(['/a', '/b.png', '/unquoted']);
     for (const target of ['', '#part', '//cdn.example.com/a.js', 'https://example.com', 'mailto:a@example.com', 'data:x']) {
       expect(shouldSkipTarget(target)).toBe(true);
     }

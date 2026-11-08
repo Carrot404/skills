@@ -4,9 +4,6 @@
 [submodule "sources/ponytail"]
 	path = sources/ponytail
 	url = https://github.com/DietrichGebert/ponytail.git
-[submodule "sources/research-skills"]
-	path = sources/research-skills
-	url = https://github.com/luwill/research-skills.git
 [submodule "sources/paper-reading-tutor"]
 	path = sources/paper-reading-tutor
 	url = https://github.com/LunarXuan/paper-reading-tutor

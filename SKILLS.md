@@ -42,7 +42,6 @@
 | `paper-rebuttal` | 分析审稿意见并撰写论文回应 | [EvoSkills](https://github.com/EvoScientist/EvoSkills/tree/main/skills/paper-rebuttal) |
 | `patent-disclosure` | 挖掘专利点并撰写中国专利交底书 | [patent-disclosure-skill](https://github.com/handsomestWei/patent-disclosure-skill/tree/main/skills/patent-disclosure) |
 | `pdf` | 读取、创建、编辑和处理 PDF 文件 | [Anthropic Skills](https://github.com/anthropics/skills/tree/main/skills/pdf) |
-| `research-proposal` | 撰写研究计划书、开题报告并核验引用 | [research-skills](https://github.com/luwill/research-skills) |
 | `siyuan-skill` | 通过 CLI 管理思源笔记 | [personal-skill/siyuan-skill](https://github.com/emptylight370/personal-skill/tree/main/siyuan-skill)，本地维护副本 |
 
 ## 安装与使用说明

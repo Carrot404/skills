@@ -4,6 +4,8 @@ import { readdir, readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import sanitizeHtml from 'sanitize-html';
+
 const scriptPath = fileURLToPath(import.meta.url);
 const defaultRepoRoot = path.resolve(path.dirname(scriptPath), '..');
 const defaultDistRoot = path.resolve(defaultRepoRoot, 'site', 'dist');
@@ -73,10 +75,20 @@ export async function resolveBuiltTarget(urlPath, options = {}) {
 
 export function extractTargets(html) {
   const targets = [];
-  const attributePattern = /\b(?:href|src)=(?:"([^"]+)"|'([^']+)')/g;
-  for (const match of html.matchAll(attributePattern)) {
-    targets.push(match[1] ?? match[2]);
-  }
+  sanitizeHtml(html, {
+    // 仅解析属性，不使用返回的 HTML。
+    allowedTags: false,
+    allowedAttributes: false,
+    allowVulnerableTags: true,
+    transformTags: {
+      '*': (tagName, attributes) => {
+        for (const name of ['href', 'src']) {
+          if (attributes[name]) targets.push(attributes[name]);
+        }
+        return { tagName, attribs: attributes };
+      },
+    },
+  });
   return targets;
 }
 

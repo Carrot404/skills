@@ -102,11 +102,6 @@
     "skillPath": "skills/pdf",
     "category": "productivity"
   },
-  "research-proposal": {
-    "submodule": "sources/research-skills",
-    "skillPath": "research-proposal",
-    "category": "productivity"
-  },
   "agent-ssh-cli": {
     "category": "development"
   },
