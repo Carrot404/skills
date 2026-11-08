@@ -5,7 +5,7 @@
 
 ## 可用 Skills
 
-当前发布了仓库内维护的 Skill 和来自 Caveman 的 Skill。完整清单、用途及特殊安装要求见
+当前发布了仓库内维护的 Skill 和来自外部项目的 Skill。完整清单、用途及特殊安装要求见
 [`SKILLS.md`](SKILLS.md)。
 
 ## 快速开始

@@ -1,3 +1,18 @@
 [submodule "sources/caveman"]
 	path = sources/caveman
 	url = https://github.com/JuliusBrussee/caveman.git
+[submodule "sources/ponytail"]
+	path = sources/ponytail
+	url = https://github.com/DietrichGebert/ponytail.git
+[submodule "sources/research-skills"]
+	path = sources/research-skills
+	url = https://github.com/luwill/research-skills.git
+[submodule "sources/paper-reading-tutor"]
+	path = sources/paper-reading-tutor
+	url = https://github.com/LunarXuan/paper-reading-tutor
+[submodule "sources/evoskills"]
+	path = sources/evoskills
+	url = https://github.com/EvoScientist/EvoSkills
+[submodule "sources/patent-disclosure-skill"]
+	path = sources/patent-disclosure-skill
+	url = https://github.com/handsomestWei/patent-disclosure-skill

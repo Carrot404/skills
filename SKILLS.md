@@ -7,6 +7,16 @@
 | `caveman-review` | 生成精简的代码审查意见 | 同上 |
 | `ultracave` | 以极简片语压缩回答 | 同上 |
 | `megacave` | 以文言文精简回答 | 同上 |
+| `ponytail` | 通过复用现有实现和最小改动避免过度设计 | [Ponytail](https://github.com/DietrichGebert/ponytail) |
+| `ponytail-audit` | 审查整个仓库的质量、风险和可精简内容 | 同上 |
+| `ponytail-debt` | 汇总标记的代码捷径和技术债 | 同上 |
+| `ponytail-gain` | 展示 Ponytail 基准测试结果 | 同上 |
+| `ponytail-help` | 查看 Ponytail 模式和命令帮助 | 同上 |
+| `ponytail-review` | 审查代码改动的质量、风险和可精简内容 | 同上 |
+| `paper-reading-tutor` | 检索、翻译并深入研读学术论文 | [paper-reading-tutor](https://github.com/LunarXuan/paper-reading-tutor) |
+| `paper-rebuttal` | 分析审稿意见并撰写论文回应 | [EvoSkills](https://github.com/EvoScientist/EvoSkills/tree/main/skills/paper-rebuttal) |
+| `patent-disclosure` | 挖掘专利点并撰写中国专利交底书 | [patent-disclosure-skill](https://github.com/handsomestWei/patent-disclosure-skill/tree/main/skills/patent-disclosure) |
+| `research-proposal` | 撰写研究计划书、开题报告并核验引用 | [research-skills](https://github.com/luwill/research-skills) |
 | `surge` | 使用 `surge-cli` 操作和排查 Surge | 仓库内维护 |
 | `agent-ssh-cli` | 通过 SSH CLI 管理连接和操作远程服务器 | [agent-ssh-cli](https://github.com/sleepinginsummer/agent-ssh-cli)，本地维护副本 |
 | `siyuan-skill` | 通过 CLI 管理思源笔记 | [personal-skill/siyuan-skill](https://github.com/emptylight370/personal-skill/tree/main/siyuan-skill)，本地维护副本 |
@@ -17,6 +27,8 @@
 ```bash
 npx skills add Carrot404/skills --skill caveman ultracave megacave
 ```
+
+Ponytail 的 Skill 以原样同步；其帮助中提到的插件钩子、自动启用、Band 和插件更新功能需要上游插件，单独安装 Skill 不提供这些功能。
 
 `agent-ssh-cli` 需要单独安装 CLI（`npm install -g agent-ssh-cli`）。`siyuan-skill` 需要在 PATH 中提供 `siyuan` 或 `SiYuan-Kernel` 命令。两个 Skill 均在本仓库本地维护，不自动同步上游。
 

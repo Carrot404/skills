@@ -25,6 +25,56 @@
     "skillPath": "skills/megacave",
     "category": "productivity"
   },
+  "ponytail": {
+    "submodule": "sources/ponytail",
+    "skillPath": "skills/ponytail",
+    "category": "development"
+  },
+  "ponytail-audit": {
+    "submodule": "sources/ponytail",
+    "skillPath": "skills/ponytail-audit",
+    "category": "development"
+  },
+  "ponytail-debt": {
+    "submodule": "sources/ponytail",
+    "skillPath": "skills/ponytail-debt",
+    "category": "development"
+  },
+  "ponytail-gain": {
+    "submodule": "sources/ponytail",
+    "skillPath": "skills/ponytail-gain",
+    "category": "development"
+  },
+  "ponytail-help": {
+    "submodule": "sources/ponytail",
+    "skillPath": "skills/ponytail-help",
+    "category": "development"
+  },
+  "ponytail-review": {
+    "submodule": "sources/ponytail",
+    "skillPath": "skills/ponytail-review",
+    "category": "development"
+  },
+  "paper-reading-tutor": {
+    "submodule": "sources/paper-reading-tutor",
+    "skillPath": ".",
+    "category": "productivity"
+  },
+  "paper-rebuttal": {
+    "submodule": "sources/evoskills",
+    "skillPath": "skills/paper-rebuttal",
+    "category": "productivity"
+  },
+  "patent-disclosure": {
+    "submodule": "sources/patent-disclosure-skill",
+    "skillPath": "skills/patent-disclosure",
+    "category": "productivity"
+  },
+  "research-proposal": {
+    "submodule": "sources/research-skills",
+    "skillPath": "research-proposal",
+    "category": "productivity"
+  },
   "siyuan-skill": {
     "category": "productivity",
     "requirements": [
