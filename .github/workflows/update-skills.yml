@@ -1,4 +1,4 @@
-name: 更新外部 Skills
+name: Update External Skills
 
 on:
   schedule:
@@ -17,36 +17,36 @@ concurrency:
 
 jobs:
   update:
-    name: 检查并同步更新
+    name: Check and Sync Updates
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
     steps:
-      - name: 检出仓库与子模块
+      - name: Checkout Repository and Submodules
         uses: actions/checkout@v7
         with:
           submodules: recursive
           fetch-depth: 0
 
-      - name: 安装 pnpm
+      - name: Install pnpm
         uses: pnpm/action-setup@v6
 
-      - name: 安装 Node.js
+      - name: Install Node.js
         uses: actions/setup-node@v7
         with:
           node-version: "22.20.0"
           cache: pnpm
 
-      - name: 安装依赖
+      - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: 更新外部 Skills
+      - name: Update External Skills
         run: pnpm run update
 
-      - name: 校验 Skills
+      - name: Validate Skills
         run: pnpm run check
 
-      - name: 创建更新 PR
+      - name: Create Update PR
         uses: peter-evans/create-pull-request@v8
         with:
           add-paths: |
@@ -55,13 +55,13 @@ jobs:
             skills
           branch: automation/update-skills
           delete-branch: true
-          commit-message: "chore: 自动更新外部 Skills"
-          title: "chore: 自动更新外部 Skills"
+          commit-message: "chore: Update External Skills"
+          title: "chore: Update External Skills"
           body: |
-            定时检查发现外部 Skill 存在更新。
+            The scheduled check found updates to external skills.
 
-            - 更新 Git submodule 指针
-            - 同步发布目录
-            - 已运行 `pnpm run check`
+            - Update Git submodule pointers
+            - Sync the published skills
+            - Ran `pnpm run check`
 
-            请在合并前检查上游 Skill 的行为变化。
+            Review upstream skill behavior changes before merging.
