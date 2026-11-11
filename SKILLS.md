@@ -57,7 +57,7 @@ Ponytail 的 Skill 以原样同步；其帮助中提到的插件钩子、自动�
 
 `agent-ssh-cli` 需要单独安装 CLI（`npm install -g agent-ssh-cli`）。`siyuan-skill` 需要在 PATH 中提供 `siyuan` 或 `SiYuan-Kernel` 命令。两个 Skill 均在本仓库本地维护，不自动同步上游。
 
-`siyuan-skill` 的上游基准提交为 [`40374d3d440d00db8a8f00562c325cf056e9afea`](https://github.com/emptylight370/personal-skill/tree/40374d3d440d00db8a8f00562c325cf056e9afea/siyuan-skill)。手动更新时可[比较基准提交与上游 main](https://github.com/emptylight370/personal-skill/compare/40374d3d440d00db8a8f00562c325cf056e9afea...main)，合并时保留下述本地修订，并在合并上游更新后修改基准提交；仅修改本地内容不改变上游基准。
+`siyuan-skill` 的上游基准提交为 [`74a1acc234ee3bda03e4cc0ecdafaa99189598b8`](https://github.com/emptylight370/personal-skill/tree/74a1acc234ee3bda03e4cc0ecdafaa99189598b8/siyuan-skill)。手动更新时可[比较基准提交与上游 main](https://github.com/emptylight370/personal-skill/compare/74a1acc234ee3bda03e4cc0ecdafaa99189598b8...main)，合并时保留下述本地修订，并在合并上游更新后修改基准提交；仅修改本地内容不改变上游基准。
 
 本仓库对 [`siyuan-skill`](skills/siyuan-skill/SKILL.md) 的本地修订包括：
 

@@ -10,13 +10,13 @@ description: 'Operate SiYuan Note CLI (siyuan) to manage workspaces, notebooks, 
 SiYuan Note provides a CLI (`siyuan`) to manage workspaces, notebooks, documents, blocks, and more.
 The binary must be available on `PATH` (verify with `siyuan --version`).
 
-> **CLI Version:** v3.8.9. Commands shown below reflect this version.
+> **CLI Version:** v3.8.10. Commands shown below reflect this version.
 
 > **Note:** If `siyuan` is not found on `PATH`, try `SiYuan-Kernel` as the alternative command name.
 
 ## Workflow
 
-Follow this sequence for every user request:
+Follow this sequence for workspace operations. For a request only to list system fonts, run `siyuan system fonts [--lang <lang>]` without opening or selecting a workspace; it outputs JSON.
 
 ### 1. Discover Available Workspaces
 
@@ -132,7 +132,7 @@ These flags are available on every subcommand:
 
 | Flag | Description |
 |------|-------------|
-| `-w, --workspace <path>` | Workspace path (required for all commands except `workspace`; optional for `serve`, which defaults to the default workspace). |
+| `-w, --workspace <path>` | Workspace path (not needed for `workspace` or `system fonts`; optional for `serve`, which defaults to the default workspace). |
 | `-f, --format <table\|json>` | Output format (default: `table`) |
 | `-v, --log-level <string>` | Log level: off, trace, debug, info, warn, error, fatal (defaults to conf.json system.logLevel) |
 | `--dry-run` | Validate and print what would happen without making changes |
@@ -168,8 +168,8 @@ These flags are available on every subcommand:
 | `siyuan inbox` | `list`, `get`, `convert` |
 | `siyuan outline` | `get` |
 | `siyuan template` | `search`, `get`, `create`, `save-as`, `render`, `remove` |
-| `siyuan system` | `current-time` |
+| `siyuan system` | `current-time`, `fonts` |
 | `siyuan serve` | (direct, with flags) |
 | `siyuan completion` | `bash`, `fish`, `powershell`, `zsh` |
 
-> **Note:** `serve` accepts all global flags plus its own flags (`--accessAuthCode`, `--attach-ui`, `--enable-pprof`, `--lang`, `--mode`, `--port`, `--readonly`, `--ssl`, `--safe-mode`, `--wd`). It does not require `-w`; see `references/commands.md` for the full flag list.
+> **Note:** `serve` accepts all global flags plus its own flags (`--accessAuthCode`, `--attach-ui`, `--enable-pprof`, `--fixed-port`, `--lang`, `--mode`, `--port`, `--readonly`, `--ssl`, `--safe-mode`, `--wd`). It does not require `-w`; see `references/commands.md` for the full flag list.

@@ -113,7 +113,7 @@
     "requirements": [
       {
         "title": "SiYuan Note CLI",
-        "description": "需要在 PATH 中提供 siyuan 或 SiYuan-Kernel 命令；Skill 中的命令基于 CLI v3.8.9。"
+        "description": "需要在 PATH 中提供 siyuan 或 SiYuan-Kernel 命令；Skill 中的命令基于 CLI v3.8.10。"
       }
     ]
   }

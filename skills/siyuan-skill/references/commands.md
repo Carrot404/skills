@@ -1,6 +1,6 @@
 # SiYuan CLI — Full Command Reference
 
-Auto-generated from `siyuan --help` output (v3.8.9).
+Based on `siyuan --help` output (v3.8.10).
 
 ---
 
@@ -14,7 +14,7 @@ These flags are available on every subcommand (global flags):
 | `-h, --help` | Show help |
 | `-v, --log-level <string>` | Log level: off, trace, debug, info, warn, error, fatal (defaults to conf.json system.logLevel) |
 | `--version` | Print version |
-| `-w, --workspace <path>` | Workspace path (required for all commands except `workspace`) |
+| `-w, --workspace <path>` | Workspace path (not needed for `workspace` or `system fonts`; optional for `serve`) |
 | `--dry-run` | Dry run mode: validate and print what would happen without making changes |
 | `--home-dir <path>` | Base directory for user configuration (defaults to the system user home) |
 
@@ -102,7 +102,7 @@ siyuan block [command] -w <path>
 | `delete --id <id>` | `--id <id>` | Delete block |
 | `move --id <id> --parent <id>` | `--id <id>` `--parent <id>` `--previous <id>` | Move block |
 | `dom --id <id>` | `--id <id>` | Get block DOM |
-| `kramdown --id <id>` | `--id <id>` `--mode md\|textmark` | Get block kramdown |
+| `kramdown --id <id>` | `--id <id>` `--mode md\|textmark` (default: `md`) | Get block kramdown |
 | `breadcrumb --id <id>` | `--id <id>` | Get block breadcrumb |
 | `batch-get --ids <ids>` | `--ids <id1,id2,...>` | Batch get block info |
 | `batch-kramdown --ids <ids>` | `--ids <id1,id2,...>` | Batch get block kramdown |
@@ -417,7 +417,7 @@ text/number/date/select/mSelect/url/email/phone/location/mAsset/template/created
 ### database item — Nested Subcommands
 | Command | Flags | Description |
 |---------|-------|-------------|
-| `item add --av <avID>` | `--av <avID>` `--block <blockID>` `--content <string>` `--detached` `--group <groupID>` `--previous <prevItemID>` `--view <viewID>` `--ignore-default-fill` | Add a row to database |
+| `item add --av <avID>` | `--av <avID>` `--block <blockID>` (default: auto-generate) `--content <string>` `--detached` `--group <groupID>` `--previous <prevItemID>` `--view <viewID>` `--ignore-default-fill` | Add a row to database |
 | `item update --av <avID> --key <keyID> --item <itemID> --value <json>` | `--av <avID>` `--key <keyID>` `--item <itemID>` `--value <json>` | Update a cell value |
 | `item remove --av <avID> --ids <id1,id2,...>` | `--av <avID>` `--ids <ids>` | Remove rows from database |
 
@@ -499,13 +499,15 @@ siyuan outline [command] -w <path>
 ## system — System Information
 
 ```
-siyuan system [command] -w <path>
+siyuan system current-time -w <path>
+siyuan system fonts [--lang <lang>]
 ```
 
 ### Subcommands
 | Command | Flags | Description |
 |---------|-------|-------------|
 | `current-time` | | Show current server time |
+| `fonts` | `--lang <lang>` (default: `en`) | List system fonts as JSON without opening a workspace |
 
 ---
 
@@ -544,6 +546,7 @@ Starts the SiYuan kernel HTTP server. All serving-related options below are pass
 | `--accessAuthCode <string>` | Access auth code |
 | `--attach-ui` | Attach kernel lifecycle to desktop UI process (used by Electron) |
 | `--enable-pprof` | Register unauthenticated /debug/pprof/ endpoints exposing process memory dumps (dev only, never enable on a network-exposed instance) |
+| `--fixed-port` | Enable the extra port 6806 proxy for browser extensions (does not change `--port`; default: true). Use `--fixed-port=false` to disable it. |
 | `--lang <string>` | Language: ar/de/en/es/fr/he/hi/id/it/ja/ko/nl/pl/pt-BR/ru/sk/sr/th/tr/uk/zh-CN/zh-TW |
 | `--mode <string>` | Run mode: dev/prod (non-prod values must not be used on network-exposed instances) (default "prod") |
 | `--port <string>` | Port of the HTTP server (default "0" = auto) |
