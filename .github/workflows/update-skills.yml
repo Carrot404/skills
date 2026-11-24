@@ -57,6 +57,7 @@ jobs:
           delete-branch: true
           commit-message: "chore: Update External Skills"
           title: "chore: Update External Skills"
+          reviewers: Carrot404
           body: |
             The scheduled check found updates to external skills.
 
