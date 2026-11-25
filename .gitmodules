@@ -31,3 +31,6 @@
 [submodule "sources/academic-research-skills"]
 	path = sources/academic-research-skills
 	url = https://github.com/Imbad0202/academic-research-skills
+[submodule "sources/google-colab-cli"]
+	path = sources/google-colab-cli
+	url = https://github.com/googlecolab/google-colab-cli

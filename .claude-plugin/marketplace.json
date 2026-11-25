@@ -12,6 +12,7 @@
       "skills": [
         "./skills/agent-ssh-cli",
         "./skills/caveman-review",
+        "./skills/colab-operator",
         "./skills/domain-modeling",
         "./skills/grill-with-docs",
         "./skills/html-plan",

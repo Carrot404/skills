@@ -102,6 +102,17 @@
     "skillPath": "skills/pdf",
     "category": "productivity"
   },
+  "colab-operator": {
+    "submodule": "sources/google-colab-cli",
+    "skillPath": "skills/colab-operator",
+    "category": "development",
+    "requirements": [
+      {
+        "title": "Google Colab CLI",
+        "description": "需要在 PATH 中提供 colab 命令，并配置 Google 账号认证。"
+      }
+    ]
+  },
   "agent-ssh-cli": {
     "category": "development"
   },
