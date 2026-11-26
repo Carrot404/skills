@@ -67,6 +67,17 @@
     "category": "development",
     "skillDependencies": ["grilling", "domain-modeling"]
   },
+  "herdr-core": {
+    "submodule": "sources/herdr-core",
+    "skillPath": "skills/herdr-core",
+    "category": "development",
+    "requirements": [
+      {
+        "title": "herdr-core CLI",
+        "description": "需要在 PATH 中提供 hc 命令；操作 Herdr 窗口时还需要 herdr-app。"
+      }
+    ]
+  },
   "html-plan": {
     "submodule": "sources/claude-plugins-community",
     "skillPath": "html-plan/skills/html-plan",

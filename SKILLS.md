@@ -10,6 +10,7 @@
 | `caveman-review` | 生成精简的代码审查意见 | [Caveman](https://github.com/JuliusBrussee/caveman) |
 | `domain-modeling` | 构建领域术语表并记录架构决策 | [Matt Pocock Skills](https://github.com/mattpocock/skills) |
 | `grill-with-docs` | 通过深入提问检验设计并记录领域文档 | [Matt Pocock Skills](https://github.com/mattpocock/skills) |
+| `herdr-core` | 使用 `hc` 协调子代理、管理终端和后台任务 | [herdr-core](https://github.com/herdrdev/herdr-core) |
 | `html-plan` | 将实现计划编写为交互式 HTML 页面 | [Claude Plugins Community](https://github.com/anthropics/claude-plugins-community/tree/main/html-plan/skills/html-plan) |
 | `ponytail` | 通过复用现有实现和最小改动避免过度设计 | [Ponytail](https://github.com/DietrichGebert/ponytail) |
 | `ponytail-audit` | 审查整个仓库的质量、风险和可精简内容 | [Ponytail](https://github.com/DietrichGebert/ponytail) |

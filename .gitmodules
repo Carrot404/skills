@@ -34,3 +34,6 @@
 [submodule "sources/google-colab-cli"]
 	path = sources/google-colab-cli
 	url = https://github.com/googlecolab/google-colab-cli
+[submodule "sources/herdr-core"]
+	path = sources/herdr-core
+	url = https://github.com/herdrdev/herdr-core.git
